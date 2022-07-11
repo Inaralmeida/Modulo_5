@@ -1,8 +1,8 @@
 // url para requisicao
 const randomUserUrl = "https://randomuser.me/api/";
 
-function gerarUsuario() {
-  /* seu código aqui */
+async function gerarUsuario() {
+  //Seu código aqui
 }
 
 gerarUsuario();

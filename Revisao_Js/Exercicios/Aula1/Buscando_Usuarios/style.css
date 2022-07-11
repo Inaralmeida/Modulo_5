@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2rem;
+}
+
+.photo {
+  max-height: 128px;
+  width: 128px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.photo img {
+  max-width: 128px;
+}
+
+.container button {
+  margin-top: 0.5rem;
+  width: 100px;
+}

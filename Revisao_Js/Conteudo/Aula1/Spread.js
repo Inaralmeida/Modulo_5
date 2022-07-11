@@ -40,6 +40,7 @@ const gato1 = {
 gato1.miar();
 
 const gato2 = { ...gato1 };
+console.log(gato2);
 gato2.nome = "Dora";
 gato2.miar();
 gato1.miar();

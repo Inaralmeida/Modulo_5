@@ -1,4 +1,5 @@
 import React from 'react'
+import S from './Button.module.css'
 
 const Button = ({ text, color }) => {
   const colors = {
@@ -7,7 +8,7 @@ const Button = ({ text, color }) => {
     amarelo: '#fff000'
   }
   return (
-    <button type='text' style={{ backgroundColor: colors[color] }}>{text}</button>
+    <button type='text' className={S.btn}>{text}</button>
   )
 }
 

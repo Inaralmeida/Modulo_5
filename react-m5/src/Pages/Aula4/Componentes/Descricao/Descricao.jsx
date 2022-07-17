@@ -1,6 +1,6 @@
 import React from 'react'
 import S from './Descricao.module.css'
-import gato2 from '../../images/gato2.svg'
+import gato2 from '../../../../images/gato2.svg'
 const Descricao = () => {
   return (
     <div className={S.container}>

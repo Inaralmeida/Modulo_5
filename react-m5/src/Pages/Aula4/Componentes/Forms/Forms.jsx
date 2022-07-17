@@ -1,6 +1,6 @@
 import React from 'react'
-import Button from '../Button/Button'
-import PetShop from '../../images/petShop.svg'
+import Button from '../../../../Components/Button/Button'
+import PetShop from '../../../../images/petShop.svg'
 import S from './Form.module.css'
 
 const Forms = () => {

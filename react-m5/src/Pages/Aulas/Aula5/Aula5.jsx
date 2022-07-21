@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import Header from '../../Components/Header/Header'
-import '../../index.css'
+import Header from '../../../Components/Header/Header'
+
 
 const Aula5 = () => {
   const url = 'https://randomuser.me/api/'

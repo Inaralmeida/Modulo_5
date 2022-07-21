@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import Sedex10 from '../Sedex10/Sedex10'
+import Sedex10 from '../../Sedex10/Sedex10'
 
 const Aula6 = () => {
   // const [contador, setContador] = useState(0)
@@ -24,7 +24,7 @@ const Aula6 = () => {
   // }
   return (
     <div>
-      <Sedex10 />
+
       {/* <h1>{contador}</h1>
       <button onClick={handleRequisicao}>requisicao</button>
       <img src={dadosRequisicao.foto} alt="" />

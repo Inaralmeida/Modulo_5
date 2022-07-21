@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
+import { useEffect } from 'react'
 import S from './BuscaPokemon.module.css'
 
 const BuscaPokemon = () => {
-  const [valorInput, setValorInput] = useState('')
+  const [valorInput, setValorInput] = useState('250')
   const [pokemon, setPokemon] = useState()
-
-
 
   function handleSetInput(target) {
     setValorInput(target.value)
@@ -21,8 +20,12 @@ const BuscaPokemon = () => {
       nome: json.name
     }
     setPokemon(resposta)
+    setValorInput('')
   }
-  console.log(valorInput);
+
+  useEffect(() => {
+    handleRequisicao()
+  }, [])
   return (
     <div className={S.container}>
       <section className={S.busca}>
@@ -40,7 +43,7 @@ const BuscaPokemon = () => {
       </section>
       <section className={S.card}>
         <picture className={S.contentFoto}>
-          <img className={S.foto} src={!!pokemon && pokemon.foto} />
+          <img className={S.foto} src={!!pokemon ? pokemon.foto : ''} />
 
         </picture>
         <p className={S.nome}>{!!pokemon && pokemon.nome}</p>

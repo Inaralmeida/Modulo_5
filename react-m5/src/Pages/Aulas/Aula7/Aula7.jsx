@@ -1,6 +1,7 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
 import Header from '../../../Components/Header/Header'
+import Title from '../../../Components/Title/Title'
 
 const Aula7 = () => {
   const [contador, setContador] = useState(0)
@@ -21,10 +22,9 @@ const Aula7 = () => {
   }, [contador])
   return (
     <div>
-      <Header titulo='Aula 7' />
+      <Title text='Aula 7' />
       <h1>contador 1: {contador}</h1>
       <button onClick={() => setContador(contador + 1)}>+1</button>
-      <Header titulo='Aula 7' />
       <h1>contador 2: {contador2}</h1>
     </div>
   )

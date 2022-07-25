@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Header from '../../../Components/Header/Header'
+import Title from '../../../Components/Title/Title'
 
 
 const Aula5 = () => {
@@ -31,7 +32,7 @@ const Aula5 = () => {
   }
   return (
     <div className="container">
-      <Header titulo='Aula5' />
+      <Title text='Aula 5' />
 
       {estaLogado ?
         <h2>Olá {valorInput}</h2>

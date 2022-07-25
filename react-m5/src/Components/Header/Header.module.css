@@ -1,7 +1,24 @@
 .container {
   background-color: #ff6347;
-  height: 70px;
+  height: 75px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+.container > nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.link {
+  padding: 5px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+.link:hover {
+  background-color: brown;
 }

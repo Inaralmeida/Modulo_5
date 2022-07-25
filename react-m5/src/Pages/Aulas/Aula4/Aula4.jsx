@@ -1,11 +1,12 @@
 import React from 'react'
-import Header from '../../../Components/Header/Header'
-import AdoteAqui from '../../AdoteAqui/AdoteAqui'
+import Title from '../../../Components/Title/Title'
+
 
 const Aula4 = () => {
   return (
     <div>
-      <AdoteAqui />
+      <Title text='Aula 4' />
+      <p>Na aula 4 criamos o adote aqui</p>
     </div>
   )
 }

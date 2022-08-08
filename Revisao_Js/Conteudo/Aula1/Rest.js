@@ -5,6 +5,6 @@ function exibeLista(empresa, ...facilitadores) {
     console.log(facilitador, "Trabalha na empresa", empresa);
   });
 }
-exibeLista("Resilia", "Gabriel", "Thom", "Inara");
+exibeLista("Resilia", "Cinthia", "Aline", "Inara");
 
 // exibe o nome da empresa (Resilia) e o nome de cada facilitador

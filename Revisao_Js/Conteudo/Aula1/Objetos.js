@@ -12,10 +12,12 @@ const cachorro = {
 
 // Acessando Propriedades
 console.log(cachorro.nome);
+//Zé
 
 //alterando Propriedades
 cachorro.nome = "Zacarias";
 console.log(cachorro);
+//Zacarias
 
 //Adicionando Propriedades
 cachorro["idade"] = 3;

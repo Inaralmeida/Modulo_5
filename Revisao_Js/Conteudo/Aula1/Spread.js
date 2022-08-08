@@ -8,7 +8,7 @@ function mesclaArrays(array1, array2) {
 const comidas = ["Pizza", "Misto quente", "Pastel"];
 const bebidas = ["Cerveja", "Café", "Refrigerante"];
 
-mesclaArrays(comidas, bebidas);
+// mesclaArrays(comidas, bebidas);
 
 //Espalhando objeto
 const comprador = {
@@ -25,7 +25,7 @@ function criaNotafiscal(comprador, carro) {
   console.log({ ...comprador, ...carro });
 }
 
-criaNotafiscal(comprador, carro);
+// criaNotafiscal(comprador, carro);
 
 //Clonando Objeto
 
@@ -37,9 +37,12 @@ const gato1 = {
     console.log(`${this.nome} Miou`);
   },
 };
+
 gato1.miar();
 
-const gato2 = { ...gato1 };
+const gato2 = {
+  // ...gato1
+};
 console.log(gato2);
 gato2.nome = "Dora";
 gato2.miar();

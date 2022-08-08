@@ -3,8 +3,10 @@
 const materialEscolar = ["Lápis", "Caderno", "Caneta", "Estojo"];
 
 const novaLista = materialEscolar.map((item, index) => {
-  return `${index + 1} - ${item}`;
+  return `Esse é o item numero: ${index + 1}- Nome do item: ${item}`;
 });
+
+console.log(novaLista);
 // retorna uma lista enumerando todos os itens
 // novaLista = [‘1 - Lápis’, ‘2 - Caderno’, ‘3 - Caneta’, ‘4 - Estojo’]
 

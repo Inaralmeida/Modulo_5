@@ -1,6 +1,6 @@
 //Utilizado quando não sabemos o numero de argumentos a ser recebido
 
-function exibeLista(empresa, ...facilitadores) {
+function exibeLista(empresa, turma, ...facilitadores) {
   facilitadores.map((facilitador) => {
     console.log(facilitador, "Trabalha na empresa", empresa);
   });

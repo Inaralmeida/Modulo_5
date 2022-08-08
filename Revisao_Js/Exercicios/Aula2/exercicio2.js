@@ -10,3 +10,8 @@ const disciplinas = [
   "Língua Portuguesa",
   "Biologia",
 ];
+
+const [dic1, dic2, dic3, dic4, dic5] = disciplinas;
+
+console.log(dic1);
+console.log(dic5);

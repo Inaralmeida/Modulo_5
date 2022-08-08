@@ -14,6 +14,9 @@ const dadosCliente = {
   },
   assinanteDesde: 2017,
 };
+dadosCliente.nome;
+const { idade, nome } = dadosCliente;
+console.log(idade, nome);
 
 const vestimenta = {
   camisa: {

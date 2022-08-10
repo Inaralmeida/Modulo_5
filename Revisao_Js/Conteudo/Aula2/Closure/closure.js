@@ -14,6 +14,7 @@ function trocaCor(nomeDaCor, id) {
       cor = "tomato";
   }
 
+  console.log(cor);
   return () => {
     const item = document.getElementById(id);
     item.style.color = cor;

@@ -1,0 +1,36 @@
+.container {
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.picture {
+  width: 500px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form {
+  width: 300px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  border: 1px solid #f2f2f2;
+  padding: 20px;
+  border-radius: 7px;
+}
+
+.input {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  padding-left: 5px;
+  background-color: #ccc;
+}

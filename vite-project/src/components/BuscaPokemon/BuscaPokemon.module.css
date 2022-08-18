@@ -1,0 +1,71 @@
+.container {
+  width: 100vw;
+  height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(https://free4kwallpapers.com/uploads/originals/2018/06/18/created-a-3d-render-of-a-pokemon-trophy-in-the-grass-wallpaper.jpg);
+  background-size: cover;
+}
+
+.card {
+  width: 300px;
+  height: 450px;
+  padding: 20px;
+
+  border-radius: 10px;
+  border: 10px solid #fbe934;
+  background: radial-gradient(
+    circle,
+    rgba(65, 103, 211, 1) 0%,
+    rgba(127, 168, 220, 1) 100%
+  );
+}
+
+.busca {
+  width: 450px;
+  margin-bottom: 150px;
+}
+
+.input {
+  width: 70%;
+  height: 40px;
+  border-radius: 10px 0 0 10px;
+  padding-left: 10px;
+  outline: none;
+  border: 2px solid black;
+}
+.button {
+  width: 30%;
+  height: 40px;
+  border-radius: 0 10px 10px 0;
+  background-color: #fbe934;
+  font-weight: bold;
+}
+.contentFoto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80%;
+  border: 5px solid #fbe934;
+  background-image: url(https://www.tynker.com/projects/screenshot/57da4d8ba924051b458b4567/pokemon-battles-alpha.png);
+  background-size: cover;
+  padding: 10px;
+}
+
+.foto {
+  width: 100%;
+}
+
+.nome {
+  font-size: 20px;
+  width: 100%;
+  border-radius: 25px 0 25px 0;
+  background-color: #fbe934;
+  text-align: center;
+  margin-top: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+}

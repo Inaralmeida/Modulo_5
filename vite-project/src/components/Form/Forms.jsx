@@ -3,7 +3,6 @@ import Button from '../Button/Button'
 import Label from '../Label/Label'
 import S from './Form.module.css'
 import formAnimado from '../../assets/formAnimado.svg'
-import work from '../../assets/work.svg'
 
 
 const Forms = () => {

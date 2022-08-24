@@ -1,0 +1,28 @@
+.container {
+  width: 40%;
+  height: 80%;
+  background-color: #777;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 15px;
+}
+
+.titulo {
+  width: 100%;
+  text-align: center;
+  line-height: 49px;
+  border-radius: 15px 15px 0 0;
+  background-color: #f2f2f2;
+  color: #000;
+}
+
+.lista {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}

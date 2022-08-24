@@ -1,0 +1,56 @@
+.container {
+  width: 20%;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  border-radius: 15px;
+  background-color: #d9d9d9;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  line-height: 49px;
+  border-radius: 15px 15px 0 0;
+  background-color: #777;
+  color: #f2f2f2;
+}
+
+.fieldset {
+  width: 90%;
+  border: none;
+}
+
+.fieldset > label {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fieldset > input,
+.fieldset > textarea {
+  width: 100%;
+  height: 53px;
+  border-radius: 5px;
+  outline: none;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.fieldset > textarea {
+  resize: none;
+  height: 130px;
+}
+
+.container > button {
+  width: 100%;
+  text-align: center;
+  line-height: 34px;
+  font-size: 18px;
+  font-weight: bold;
+  width: 90%;
+  margin-bottom: 20px;
+}

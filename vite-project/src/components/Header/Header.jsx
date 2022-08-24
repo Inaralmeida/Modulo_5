@@ -11,6 +11,7 @@ const Header = ({ texto }) => {
         <Link className={S.link} to='/'>Home</Link>
         <Link className={S.link} to='/sedex10'>Sedex 10</Link>
         <Link className={S.link} to='/pokemon'>Busca Pokemons</Link>
+        <Link className={S.link} to='/todos'>ToDo List</Link>
       </nav>
     </header>
   )

@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import S from './FormAddToDo.module.css'
 
-const FormAddToDo = ({ dadosForm, handleChange }) => {
+const FormAddToDo = ({ dadosForm, handleChange, handleClick }) => {
   useState
   return (
     <form className={S.container}>
@@ -29,7 +29,7 @@ const FormAddToDo = ({ dadosForm, handleChange }) => {
 
       </fieldset>
 
-      <button>Adicionar Tarefa</button>
+      <button onClick={handleClick}>Adicionar Tarefa</button>
     </form>
   )
 }

@@ -11,6 +11,9 @@ const ToDo = () => {
     status: false
   })
 
+  //Estado para armazenar todas as tarefas
+  const [lista, setLista] = useState([])
+
   //4 - Criar uma função que receba o evento de change e o nome da chave que será alterada
   function handleChange(e, nomeDaChave) {
     //6 - Chamar a função que vai alterar o estado 
@@ -27,9 +30,33 @@ const ToDo = () => {
     )
   }
 
-  console.log(dadosForm);
+  function handleClick(e) {
+    e.preventDefault()
+
+    console.log(dadosForm);
+    //SetLista altera o estado lista
+
+    setLista(
+      //Criar uma lista (array) nova
+      [
+        //Guardar o valor antigo
+        ...lista,
+
+        //adiciona a nova tarefa
+        dadosForm
+      ]
+    )
+
+    //Limpar informações do dados form
+    setDadosForm({
+      titulo: '',
+      descricao: '',
+      status: false
+    })
+  }
 
 
+  console.log(lista)
   return (
     <div className={S.container}>
 
@@ -37,9 +64,13 @@ const ToDo = () => {
         //2 - Passar o estado como props
         dadosForm={dadosForm}
         //5 - Passar a função de change como props
-        handleChange={handleChange} />
+        handleChange={handleChange}
 
-      <ListaTodos />
+        handleClick={handleClick}
+
+      />
+
+      <ListaTodos lista={lista} />
     </div>
   )
 }

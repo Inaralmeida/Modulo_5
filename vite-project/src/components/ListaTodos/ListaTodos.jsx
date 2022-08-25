@@ -7,10 +7,18 @@ const ListaTodos = ({ lista }) => {
     <div className={S.container}>
       <h2 className={S.titulo}>Lista de Tarefas</h2>
       <div className={S.lista}>
-        <ToDoIndividual
-          titulo='Estudar'
-          descricao='Estudar como pegar o state de cada input e salvar no mesmo lugar.'
-        />
+        {lista.map((tarefa, index) => {
+          return (
+            <ToDoIndividual
+              key={index}
+              titulo={tarefa.titulo}
+              descricao={tarefa.descricao}
+              status={tarefa.status}
+            />
+          )
+        })}
+
+
       </div>
     </div>
   )

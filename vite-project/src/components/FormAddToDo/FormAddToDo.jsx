@@ -1,8 +1,12 @@
 import React from 'react'
+import { useContext } from 'react'
 import { useState } from 'react'
+import { ToDoContext } from '../../context/ToDoListProvider'
 import S from './FormAddToDo.module.css'
 
-const FormAddToDo = ({ dadosForm, handleChange, handleClick }) => {
+const FormAddToDo = () => {
+  const { dadosForm, handleChange, handleClick } = useContext(ToDoContext)
+
   useState
   return (
     <form className={S.container}>

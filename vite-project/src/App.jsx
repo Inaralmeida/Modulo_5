@@ -18,8 +18,11 @@ function App() {
       {/* Estatico */}
       <Header />
       <Routes>
+
         <Route path="/" element={<Home />} />
         <Route path='/sedex10' element={<Sedex10 />} />
+
+
         <Route path='/pokemon' element={<BuscaPokemon />} />
         <Route path='/todos' element={<ToDo />} />
 
